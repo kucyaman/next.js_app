@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <main>
       <div>
-        <p>Hello, world!</p>
+      <p className="font-bold underline">Hello, world!</p>
       </div>
     </main>
   )
