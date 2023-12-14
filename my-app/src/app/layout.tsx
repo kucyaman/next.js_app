@@ -1,3 +1,11 @@
+import { Noto_Sans_JP } from 'next/font/google'
+
+// 1. フォントの読み込み
+const NotoSansJP = Noto_Sans_JP({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  preload: true,
+});
 
 // 1. ページのメタデータ
 export const metadata = {
@@ -14,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       {/* 3. ページやレイアウトの内容を表示 */}
-      <body>{children}</body>
+      <body className={NotoSansJP.className}>{children}</body>
     </html>
   )
 }
